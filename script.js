@@ -1,12 +1,21 @@
 $(document).ready(function () {
 
-    $('.carousel').carousel();
+    $('.carousel').carousel({ interval: false });
     initMyChart();
 
 
 
+    $('#continue').on("click", function () {
+        console.log("sample message")
 
+        $('.carousel').carousel('next')
 
+    });
+
+    $('#prev').on("click", function () {
+        console.log("sample message 2")
+        $('.carousel').carousel('prev')
+    });
 
 
 

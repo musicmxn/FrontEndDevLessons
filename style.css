@@ -3,12 +3,11 @@
     color: blue;
 }
 
-.questions {
+.carousel{
     padding: 15px;
     border: 1px solid lightgrey;
     border-radius: 4px;
 }
-
 
 .carousel-control-next {
 

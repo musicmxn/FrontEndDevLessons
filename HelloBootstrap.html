@@ -10,6 +10,49 @@
 
     <link rel="stylesheet" href="./style.css">
 
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h1>My First Boostrap Page</h1>
+        <p>The start of greatness</p>
+
+        <div class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-target="#Slide" data-slide-to="0">
+                    <article class="questions row justify-content-md-center d-block w-100">
+                        <section class="col-sm-4">
+                            <p>Look at this chart on the right and then click the button below</p>
+                        </section>
+            
+                        <section class="right mx-auto col-sm-4">
+                            <div class="overviewContainer">
+                                <h2 class="missionstatement">Average Rainfall per Season</h2>
+                            </div>
+                            <canvas id="myChart" width="400" height="400">
+                                <p>Chart is unable to load</p>
+                            </canvas>
+                        </section>
+            
+                    </article>
+                </div>
+                <div class="carousel-item" data-target="#Slide" data-slide-to="1">
+                    <img class="d-block w-100" src="download2.svg" alt="Second slide">
+                </div>
+                <div class="carousel-item" data-target="#Slide" data-slide-to="2">
+                    <img class="d-block w-100" src="download3.svg" alt="Third slide">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary" id="continue" href="#Slide"
+                data-slide="next">Continue</button>
+            <button type="button" class="btn btn-secondary" id="prev" href="#Slide"
+                data-slide="prev">Back</button>
+        </div>
+    </div>
+
     <!-- Link Javascript file & link CDN
 -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -24,48 +67,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="./script.js" type="text/javascript"></script>
-
-
-</head>
-
-<body>
-
-    <div class="container">
-        <h1>My First Boostrap Page</h1>
-        <p>The start of greatness</p>
-
-        <div class="carousel" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-target="#Slide" data-slide-to="0">
-                    <img class="d-block w-100" src="download1.svg" alt="First slide">
-                </div>
-                <div class="carousel-item" data-target="#Slide" data-slide-to="1">
-                    <img class="d-block w-100" src="download2.svg" alt="Second slide">
-                </div>
-                <div class="carousel-item" data-target="#Slide" data-slide-to="2">
-                    <img class="d-block w-100" src="download3.svg" alt="Third slide">
-                </div>
-            </div>
-            <button type="button" class="btn btn-primary carousel-control" href="#Slide" data-slide="next">Continue</button>
-            <button type="button" class="btn btn-secondary carousel-control" href="#Slide" data-slide="prev">Back</button>
-        </div>
-
-        <article class="questions row justify-content-md-center">
-            <section class="col-sm-4">
-                <p>Look at this chart on the right and then click the button below</p>
-            </section>
-
-            <section class="right mx-auto col-sm-4">
-                <div class="overviewContainer">
-                    <h2 class="missionstatement">Average Rainfall per Season</h2>
-                </div>
-                <canvas id="myChart" width="400" height="400">
-                    <p>Chart is unable to load</p>
-                </canvas>
-            </section>
-
-        </article>
-    </div>
 
 </body>
 
